@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkedIn - Clone</title>
+  <!-- Bootstrap Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="./Css/style.css">
+
+</head>
+
+<body class="">
+  <!-- Navbar Menü -->
+
+  <header class="bg-white">
+    <div class="px-2 py-0 shadow-sm">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 px-2 text-dark text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bg-white text-primary " width="40" height="40"
+              fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg>            
+          </a>
+          <span class="me-auto">
+            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+              <input type="search" class="form-control" placeholder="Arama Yap" aria-label="Search">
+            </form>
+          </span>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="#" class="nav-link text-secondary mt-2 ">               
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="d-block mx-auto mb-1 mercado-match" width="24" height="24" focusable="false">
+                  <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                </svg>
+                <small>Ana Sayfa</small>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="d-block mx-auto mb-1 mercado-match" width="24" height="24" focusable="false">
+                  <path d="M12 6.5a4.5 4.5 0 114.5 4.5A4.49 4.49 0 0112 6.5zm6 6.5h-3a3 3 0 00-3 3v6h9v-6a3 3 0 00-3-3zM6.5 6A3.5 3.5 0 1010 9.5 3.5 3.5 0 006.5 6zm1 9h-2A2.5 2.5 0 003 17.5V22h7v-4.5A2.5 2.5 0 007.5 15z"></path>
+                </svg>
+                <small>Ağım</small>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="d-block mx-auto mb-1 mercado-match" width="24" height="24" focusable="false">
+                  <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                </svg>
+                <small>İş İlanları</small>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="d-block mx-auto mb-1 mercado-match" width="24" height="24" focusable="false">
+                  <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                </svg>
+                <Small>Mesajlaşma</Small>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="d-block mx-auto mb-1 mercado-match" width="24" height="24" focusable="false">
+                  <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                </svg>
+                <small>Bildirimler</small>
+              </a>
+            </li>
+            <li class="border-end">
+              <a href="#" class="nav-link text-secondary mt-2">
+                <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24"
+                  class="rounded-circle d-block mx-auto mb-1">
+                <small>Ben</small>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+              </a>
+
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary mt-2 ms-4 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="d-block mx-auto mb-1 mercado-match" width="24" height="24" focusable="false">
+                  <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                </svg>
+                <small>İş</small>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="d-block mx-auto mb-1" width="24" height="24" focusable="false">
+                  <circle cx="12" cy="4" r="2" style="isolation:isolate" opacity=".75"></circle>
+                  <path d="M21 10H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V11a1 1 0 00-1-1zm-5 9H8v-2h8v2zm2-4H6v-2h12v2z"></path>
+                  <g opacity=".6">
+                    <path d="M9.57 5.75l-2.41 4.83 1.68.84 2.28-4.57a3 3 0 01-1.55-1.1zM14.43 5.75a3 3 0 01-1.55 1.1l2.28 4.57 1.68-.84z" style="isolation:isolate" opacity=".55"></path>
+                  </g>
+                </svg>
+                <small>Ücretsiz iş ilanı yayınla</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar Menü End -->
+
+
+  <section class="container mt-2">
+    <div class="row p-2">
+      <div class="col">
+        <aside class="col">
+          <div class="card bg-white">
+            <img src="https://picsum.photos/id/12/200/50" class="card-img-top" alt="...">
+            <span class="d-flex justify-content-center yukari"><img src="https://picsum.photos/id/12/80/80"
+                class="rounded-circle border border-white border border-2" alt="..."> </span>
+            <div class="card-body">
+              <h6 class="card-title text-center">Onur IŞIK</h6>
+              <small class="text-muted d-flex justify-content-center fstyle">Kocaeli Üniversitesi</small>
+            </div>
+            <hr>
+            <div class="card-body py-0">
+              <p><small>Kişi profilinizi görüntüledi</small><span class="float-end text-primary fw-semibold">63</span>
+              </p>
+              <p><small>Gönderiniz için Gösterim</small><span class="float-end text-primary fw-semibold">289</span></p>
+            </div>
+            <hr>
+            <div class="card-body py-0">
+              <small class="text-muted fstyle">Özel araç ve içgörülere erişin</small>
+              <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                  class="mercado-match" width="24" height="24" focusable="false">
+                  <path d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                    fill="#f8c77e"></path>
+                  <path d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                    fill="#e7a33e"></path>
+                </svg>
+                <a href="#" class="text-dark fstyle">Daha hızlı işe alın.Ücretsiz deneyin Premium .</a>
+              </p>
+            </div>
+            <div class="card-footer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-bookmark-fill text-muted" viewBox="0 0 16 16">
+                <path
+                  d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+              </svg>
+              <span class="fw-semibold fstyle text-muted">Öğelerim</span>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="col mt-2">
+          <div class="card">
+            <div class="card-body">
+            <span class="fstyle pt-2">En Yeni</span>
+            <ul class="list-unstyled">
+              <li class="fstyle"><a href="#" class="text-decoration-none text-dark"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                    fill="currentColor" class="mercado-match text-muted" width="16" height="16" focusable="false">
+                    <path
+                      d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z">
+                    </path>
+                    <circle cx="8" cy="4" r="2"></circle>
+                    <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                    <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                    <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                  </svg>
+                </span>Front End Developer Group</a>
+              </li>
+              <li class="fstyle"><a href="#" class="text-decoration-none text-dark"><span>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                      fill="currentColor" class="mercado-match text-muted" width="16" height="16" focusable="false">
+                      <path
+                        d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z">
+                      </path>
+                      <circle cx="8" cy="4" r="2"></circle>
+                      <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                      <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                      <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                    </svg>
+                  </span>
+                </span>Front End Developer Network</a>
+              </li>
+            </ul>
+            <span class="text-primary fw-semibold fstyle"><a href="" class="text-decoration-none">Gruplar</a></span>
+            <ul class="list-unstyled">
+              <li class="fstyle"><a href="#" class="text-decoration-none text-dark"><span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                      fill="currentColor" class="mercado-match text-muted" width="16" height="16" focusable="false">
+                      <path
+                        d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z">
+                      </path>
+                      <circle cx="8" cy="4" r="2"></circle>
+                      <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                      <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                      <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                    </svg>
+                  </span>
+                </span>Front End Developer Network</a>
+              </li>
+              <li class="fstyle"><a href="#" class="text-decoration-none text-dark"><span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                      fill="currentColor" class="mercado-match text-muted" width="16" height="16" focusable="false">
+                      <path
+                        d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z">
+                      </path>
+                      <circle cx="8" cy="4" r="2"></circle>
+                      <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                      <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                      <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                    </svg>
+                  </span>
+                </span>Front End Developer Network</a>
+              </li>
+              <li class="text-muted fw-semibold fstyle mt-2"><a href="" class="text-decoration-none text-dark">Tümünü Gör</a></li>
+            </ul>
+            
+            <p><a href="#" class="fstyle fw-semibold">Etkinlikler</a><span class="float-end fw-semibold"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg></a></span>
+            </p>
+            <p class="text-primary fstyle fw-semibold"><a href="#" class="text-decoration-none">Takip edilen hashtagler</a></p>              
+          </div>
+          <div class="card-footer">
+            <span class="d-flex justify-content-center text-muted text-center"><a href="" class="text-decoration-none text-dark">Daha fazla keşfet</a></span>
+          </div>          
+          </div>          
+        </aside>
+      </div>
+
+
+
+      <main class="col-6">
+        <div class="row bg-white border border-1 border-muted rounded-3">
+          <div class="container p-3">
+            <div class="bg-white ">
+              <a href=""><img src="https://picsum.photos/id/15/50/50" alt="" class="rounded-circle"></a>
+            <button class="btn btn-secondary bg-transparent rounded-5 btn-gndr ms-2" type="button"><span class="fw-semibold text-muted float-start">Gönderi başlat</span></button>
+            </div>
+            <div class="mt-3 ">
+              <ul class="list-inline d-flex justify-content-between">
+                <li class="list-inline-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+                  </svg>
+                  <button class="btn btn-secondary bg-transparent border-0" type="button">
+                    <span class="fw-semibold text-muted float-start">Fotograf</span>
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+                  </svg>
+                  <button class="btn btn-secondary bg-transparent border-0" type="button">
+                    <span class="fw-semibold text-muted float-start">Video</span>
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                  </svg>
+                  <button class="btn btn-secondary bg-transparent border-0" type="button">
+                    <span class="fw-semibold text-muted float-start">İş ilanı</span>
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+                  </svg>
+                  <button class="btn btn-secondary bg-transparent border-0" type="button">
+                    <span class="fw-semibold text-muted float-start">Yazı Yaz</span>
+                  </button>
+                </li>                
+              </ul>
+            </div>
+          </div>       
+        </div>
+
+        <div>
+             <span class="fstyle text-muted float-end mt-2">Sıralama ölçütü : <a href="" class="fw-semibold text-decoration-none text-dark">En Önemli</a></span>
+                       
+        </div> 
+        
+          <div class="row mt-5">
+            <div class="container">
+              <div class="card">
+                <div class="card-header border-0 bg-white">
+                  <div class="mt-2">
+                    <a href="" class="text-decoration-none"><img src="https://picsum.photos/id/78/26/26" alt="" class="rounded-circle"><span class="h6 text-dark ms-2 me-1">Selman Toruncu</span></a><small>bunu beğendi</small>
+                    <a href="" class="text-muted">
+                      <span class="float-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="float-end me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-three-dots text-muted" viewBox="0 0 16 16">
+                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <hr class="text-muted">
+                </div> 
+                <div class="card-body d-flex justify-content-end">
+                  <div class="mt-2">
+                    <a href=""><img src="https://picsum.photos/id/68/48/48" alt="" class="rounded-circle"></a>
+                  </div>
+                  <div class="ms-3">
+                    <ul class="list-unstyled text-muted">
+                      <li>Onur Işık <span>1.</span></li>
+                      <li><small style="font-size: 11px;">Front End Developer</small></li>
+                      <li><small style="font-size: 11px;">2 Hafta.<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match  ms-1" width="16" height="16" focusable="false">
+                        <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                      </svg></span></small></li>
+                    </ul>
+                  </div>
+                  <span class="btn btn-transparent ms-auto d-flex align-items-center text-primary fw-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus me-2" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>Takip Et</span>                  
+                </div> 
+                <div class="container p-0">
+                  <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magni delectus, possimus eveniet quo reprehenderit, laborum dignissimos nobis ipsam sunt neque architecto accusamus totam? Odio itaque ratione nostrum voluptas dolore quasi, sed aliquid recusandae numquam deserunt illum nesciunt minus doloremque dicta rem, velit a modi voluptatum necessitatibus dolores labore. Laboriosam.</p>
+                  <img src="https://picsum.photos/id/68/600/300" alt="" class="w-100">
+                </div> 
+                <span>
+                  <button aria-label="" class="t-black--light display-flex social-details-social-counts__count-value t-12 hoverable-link-text border-0 m-2 bg-transparent" type="button">
+                      <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-light" src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like" data-test-reactions-icon-type="LIKE" data-test-reactions-icon-theme="light">
+                       <span aria-hidden="true" class="social-details-social-counts__reactions-count">5</span>
+                  </button>
+                </span>
+                <div class="container">
+                  <ul class="list-inline d-flex justify-content-between">
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Beğen</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Yorum Yap</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Paylaş</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Gönder</span>
+                      </button>
+                    </li>                
+                  </ul>
+                </div>                
+              </div>
+            </div>
+          </div>
+
+
+
+          
+
+
+
+          <div class="row mt-2">
+            <div class="container">
+              <div class="card">
+                <div class="card-header border-0 bg-white">
+                  <div class="mt-2">
+                    <a href="" class="text-decoration-none"><img src="https://picsum.photos/id/78/26/26" alt="" class="rounded-circle"><span class="h6 text-dark ms-2 me-1">Selman Toruncu</span></a><small>bunu beğendi</small>
+                    <a href="" class="text-muted">
+                      <span class="float-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="float-end me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-three-dots text-muted" viewBox="0 0 16 16">
+                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <hr class="text-muted">
+                </div> 
+                <div class="card-body d-flex justify-content-end">
+                  <div class="mt-2">
+                    <a href=""><img src="https://picsum.photos/id/68/48/48" alt="" class="rounded-circle"></a>
+                  </div>
+                  <div class="ms-3">
+                    <ul class="list-unstyled text-muted">
+                      <li>Onur Işık <span>1.</span></li>
+                      <li><small style="font-size: 11px;">Front End Developer</small></li>
+                      <li><small style="font-size: 11px;">2 Hafta.<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match  ms-1" width="16" height="16" focusable="false">
+                        <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                      </svg></span></small></li>
+                    </ul>
+                  </div>
+                  <span class="btn btn-transparent ms-auto d-flex align-items-center text-primary fw-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus me-2" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>Takip Et</span>                  
+                </div> 
+                <div class="container p-0">
+                  <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magni delectus, possimus eveniet quo reprehenderit, laborum dignissimos nobis ipsam sunt neque architecto accusamus totam? Odio itaque ratione nostrum voluptas dolore quasi, sed aliquid recusandae numquam deserunt illum nesciunt minus doloremque dicta rem, velit a modi voluptatum necessitatibus dolores labore. Laboriosam.</p>
+                  <img src="https://picsum.photos/id/66/600/300" alt="" class="w-100">
+                </div> 
+                <span>
+                  <button aria-label="" class="t-black--light display-flex social-details-social-counts__count-value t-12 hoverable-link-text border-0 m-2 bg-transparent" type="button">
+                      <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-light" src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like" data-test-reactions-icon-type="LIKE" data-test-reactions-icon-theme="light">
+                       <span aria-hidden="true" class="social-details-social-counts__reactions-count">5</span>
+                  </button>
+                </span>
+                <div class="container">
+                  <ul class="list-inline d-flex justify-content-between">
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Beğen</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Yorum Yap</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Paylaş</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Gönder</span>
+                      </button>
+                    </li>                
+                  </ul>
+                </div>                
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="container">
+              <div class="card">
+                <div class="card-header border-0 bg-white">
+                  <div class="mt-2">
+                    <a href="" class="text-decoration-none"><img src="https://picsum.photos/id/78/26/26" alt="" class="rounded-circle"><span class="h6 text-dark ms-2 me-1">Selman Toruncu</span></a><small>bunu beğendi</small>
+                    <a href="" class="text-muted">
+                      <span class="float-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="float-end me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-three-dots text-muted" viewBox="0 0 16 16">
+                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <hr class="text-muted">
+                </div> 
+                <div class="card-body d-flex justify-content-end">
+                  <div class="mt-2">
+                    <a href=""><img src="https://picsum.photos/id/68/48/48" alt="" class="rounded-circle"></a>
+                  </div>
+                  <div class="ms-3">
+                    <ul class="list-unstyled text-muted">
+                      <li>Onur Işık <span>1.</span></li>
+                      <li><small style="font-size: 11px;">Front End Developer</small></li>
+                      <li><small style="font-size: 11px;">2 Hafta.<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match  ms-1" width="16" height="16" focusable="false">
+                        <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                      </svg></span></small></li>
+                    </ul>
+                  </div>
+                  <span class="btn btn-transparent ms-auto d-flex align-items-center text-primary fw-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus me-2" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>Takip Et</span>                  
+                </div> 
+                <div class="container p-0">
+                  <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magni delectus, possimus eveniet quo reprehenderit, laborum dignissimos nobis ipsam sunt neque architecto accusamus totam? Odio itaque ratione nostrum voluptas dolore quasi, sed aliquid recusandae numquam deserunt illum nesciunt minus doloremque dicta rem, velit a modi voluptatum necessitatibus dolores labore. Laboriosam.</p>
+                  <img src="https://picsum.photos/id/75/600/300" alt="" class="w-100">
+                </div> 
+                <span>
+                  <button aria-label="" class="t-black--light display-flex social-details-social-counts__count-value t-12 hoverable-link-text border-0 m-2 bg-transparent" type="button">
+                      <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-light" src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like" data-test-reactions-icon-type="LIKE" data-test-reactions-icon-theme="light">
+                       <span aria-hidden="true" class="social-details-social-counts__reactions-count">5</span>
+                  </button>
+                </span>
+                <div class="container">
+                  <ul class="list-inline d-flex justify-content-between">
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Beğen</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Yorum Yap</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Paylaş</span>
+                      </button>
+                    </li>
+                    <li class="list-inline-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                      </svg>
+                      <button class="btn btn-secondary bg-transparent border-0" type="button">
+                        <span class="fw-semibold text-muted float-start">Gönder</span>
+                      </button>
+                    </li>                
+                  </ul>
+                </div>                
+              </div>
+            </div>
+          </div>          
+      </main>
+
+   
+      <div class="col-3">
+        <!-- Responsive yapı için sağ panele 3 birim verildi.  -->
+        <div class="card">
+            <div class="card-header bg-white border-0">
+                <span>Akışınıza ekleyin</span><span><i class="bi bi-info-circle-fill float-end"></i></span>
+            </div>
+            <div class="card-title">
+                <div class="ms-2 mt-2">
+                    <img src="https://picsum.photos/id/16/50/50"class="ms-3" style="width: 50px; height: 50px; border-radius: 50%" />                    
+                    <span class="header ms-2" style="font-size: 14px">Codecraft</span>
+                    <!-- Sağ panelde logoların yazıları yanlarında olması için Div yerine span kullanıldı. -->
+                    <span class="float-right ms-5 mt-2">
+                        <button class="" style="border-radius: 50px">
+                            <strong>+ Takip Et</strong>
+                        </button>
+                    </span>
+                </div>
+            </div> 
+            <div class="card-title">
+                <div class="ms-2 mt-2">
+                    <img src="https://picsum.photos/id/71/50/50" class="ms-3" style="width: 50px; height: 50px; border-radius: 50%" />
+                    <span class="header ms-2" style="font-size: 14px">Podfresh</span>
+                    <span class="float-right ms-5 mt-2">
+                        <button class="" style="border-radius: 50px">
+                            <strong>+ Takip Et</strong>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="card-title">
+                <div class="ms-2 mt-2">
+                    <img src="https://picsum.photos/id/96/50/50" class="ms-3" style="width: 50px; height: 50px; border-radius: 50%" />
+                    <span class="header ms-2" style="font-size: 14px">Navlungo</span>
+                    <span class="float-right ms-5 mt-2">
+                      <button class="" style="border-radius: 50px">
+                            <strong>+ Takip Et</strong>
+                      </button></span>
+                </div>
+            </div>
+            <div class="card-footer bg-white border-0" style="font-size: 14px; color: #0a66c2">
+                <strong></strong>
+            </div>
+        </div>
+
+        <div class="card mt-2" style="width: 19rem">
+            <!-- Bugünün en çok izlenen eğitimleri bölümünün genişliği üstteki gibi ayarlandı (width: 19rem). -->
+            <div class="card-header bg-white border-0">
+                <span>Bugünün en çok izlenen eğitimleri</span><span><i
+                        class="fas fa-info-circle float-right"></i></span>
+            </div>
+            <div class="card-title">
+                <ol>
+                    <li>
+                        The Six Morning Habits of High Perf...
+                        <div style="font-weight: lighter;font-size: 13px;color: #5f5f5f;">
+                            Pete Mocakatais | How to be awesome at you...
+                        </div>
+                    </li>
+                    <li class="mt-2">
+                        Onconscious Blas
+                        <div style="font-weight: lighter;font-size: 13px;color: #5f5f5f;">
+                            Stacey Gordon
+                        </div>
+                    </li>
+                    <li class="mt-2">
+                        Critical Thinking for Better Judgme...
+                        <div style="font-weight: lighter;font-size: 13px;color: #5f5f5f;">
+                            Becki Saltzman
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="card-footer bg-white border-0 text-center" style="color: #0a66c2; font-size: 15px; margin-top: -25px">
+                <b>Linkedin Learning'de daha fazlasını göster</b>
+            </div>
+        </div>
+        <div class="text-center sticky mt-3 mx-3" style="margin-top: 4rem;">
+            <!-- Sağ panelde en alttaki bölümeye sticky pozisyon verildi ve overflowunu görünür yapıldı. Yukarıdan 4rem mesafe verildi. -->
+            <a href="https://about.linkedin.com/" class="link mx-4 text-dark">Hakkında</a>
+            <a href="https://www.linkedin.com/accessibility?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.accessibility"
+                    class="link mx-4 text-dark">Erişilebilirlik</a>
+            <a href="https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.help"
+                    class="link text-dark">Yardım Merkezi</a>
+            <a href="" class="link mx-4 text-dark">Gizlilik ve Koşullar</a>
+            <a href="https://www.linkedin.com/help/linkedin/answer/62931?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.ad_choices"
+                    class="link mx-3 text-dark">Reklam Tercihleri</a>
+            <a href="https://www.linkedin.com/ad/start?trk=n_nav_ads_rr&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.advertising"
+                    class="link text-dark">Reklam</a>
+                    <!-- Div'ler silindi linkler yan yana alındı. -->
+            <div class="text-center" style="margin-top: 10px">
+                <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Logo.wine.svg" width="90px"height="20px" /><span style="font-size: 12px; margin-left: -15px">Linkedin Corporation © 2021</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<nav class="navbar navbar-expand-xl navbar-light bg-white position-sticky fixed-bottom border"
+  style=" width: 350px; height: 50px; position:-webkit-sticky; border-radius: 5px; margin-left: auto; right: 15px;">
+  <!-- Mesajlaşmanın genişliği 300px yapıldı (width: 300px;). Arkaplanı beyaz yapıldı (bg-white) -->
+
+  <a class="navbar-brand" href="#">
+      <img src="https://picsum.photos/id/15/50/50" style="width:30px; height: 30px; border-radius: 50%;" class="ms-3" />
+  </a>
+  <span style="font-size: 14px; font-weight: bold; font-family:Arial, Helvetica, sans-serif;">
+      <strong>Mesajlaşma</strong>
+  </span>
+
+  <span class="offset-2"><img src="/assets/edit-regular.svg" width="15px" height="15px"></span>
+  <span><a href="" class="text-dark"><i class="bi bi-pencil-square p-2"></i></a></span>
+  <span><a href="" class="text-dark"><i class="bi bi-three-dots p-2"></i></a></span>
+  <span><a href="" class="text-dark"><i class="bi bi-chevron-compact-up p-2 "></i></a></span>
+</nav>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
